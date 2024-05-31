@@ -1,3 +1,4 @@
+import 'package:android_studio_run_test/screens/Intro_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
     var switchValue = false;
 
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-        ),
+        //------------------------------------------------------//
+        // title: 'Flutter Demo',
+        // theme: ThemeData(
+        //   primarySwatch: Colors.blue,
+        //   visualDensity: VisualDensity.adaptivePlatformDensity,
+        // ),
         // 텍스트 연습
         // home: Container(
         //   color: Colors.white,
@@ -30,18 +32,18 @@ class MyApp extends StatelessWidget {
         // ),
 
         // 다크모드 스위치
-        darkTheme: ThemeData.light(),
-        home: Scaffold(
-          body: Center(
-            child: Switch(
-                value: switchValue,
-                onChanged: (value) {
-                  switchValue = value;
-                }),
-          ),
-        ));
+        // darkTheme: ThemeData.light(),
+        // home: Scaffold(
+        //   body: Center(
+        //     child: Switch(
+        //         value: switchValue,
+        //         onChanged: (value) {
+        //           switchValue = value;
+        //         }),
+        //   ),
+        // )
+        //------------------------------------------------------//
+        theme: ThemeData(primarySwatch: Colors.indigo),
+        home: IntroScreen());
   }
 }
-
-// class MyHomePage {
-// }
